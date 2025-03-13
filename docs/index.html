@@ -1,5 +1,6 @@
 <!Doctype html>
 <html>
+
 <head>
     <link rel="stylesheet" href="icons.css" />
 
@@ -9,77 +10,158 @@
         }
 
         .card {
-            width: 5rem;
-            border: 1px solid var(--primary);
+            border: 1px solid gray;
             border-radius: 0.5rem;
             padding: 0.5rem;
             margin: auto;
         }
 
-        body {
+        #icons {
             padding-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(5, 10rem);
-            width: max-content;
-            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
+            justify-content: space-evenly;
         }
 
-        div.icon {
-            width: max-content;
+        body {
+            width: 40rem;
             margin: auto;
+            font-family: sans-serif;
+            margin-bottom: 30rem;
+        }
+
+        button {
+            border-radius: 1.125rem;
+            background: white;
+            box-shadow:5px 5px 1rem lightgray;
+        }
+
+        button:hover {
+            background: lightgray;
         }
     </style>
 </head>
 
 <body>
-        <div class="card">
-            <div>search</div>
-            <div class="icon"><span class="big icon search"></span></div>
-        </div>
-        <div class="card">
-            <div>right_arrow</div>
-            <div class="icon"><span class="big icon right_arrow"></span></div>
-        </div>
-        <div class="card">
-            <div>x</div>
-            <div class="icon"><span class="big icon x"></span></div>
-        </div>
-        <div class="card">
-            <div>left_arrow</div>
-            <div class="icon"><span class="big icon left_arrow"></span></div>
-        </div>
-        <div class="card">
-            <div>tick</div>
-            <div class="icon"><span class="big icon tick"></span></div>
-        </div>
-        <div class="card">
-            <div>plus</div>
-            <div class="icon"><span class="big icon plus"></span></div>
-        </div>
-        <div class="card">
-            <div>down_arrow</div>
-            <div class="icon"><span class="big icon down_arrow"></span></div>
-        </div>
-        <div class="card">
-            <div>trash</div>
-            <div class="icon"><span class="big icon trash"></span></div>
-        </div>
-        <div class="card">
-            <div>up_arrow</div>
-            <div class="icon"><span class="big icon up_arrow"></span></div>
-        </div>
-        <div class="card">
-            <div>filter</div>
-            <div class="icon"><span class="big icon filter"></span></div>
-        </div>
-        <div class="card">
-            <div>minus</div>
-            <div class="icon"><span class="big icon minus"></span></div>
-        </div>
-        <div class="card">
-            <div>heart</div>
-            <div class="icon"><span class="big icon heart"></span></div>
-        </div>
+    <h1>How to use</h1>
+    <p>
+        In order to use the icons one must link the css in the html head. This will link to the
+        icons.css file hosted from the repository via github pages:
+    </p>
+    <pre>
+&lthead&gt
+    &ltlink
+        rel="stylesheet"
+        href="https://simondwall.github.io/icons/icons.css" /&gt
+&lt/head&gt
+    </pre>
+    <p>
+        Alternatively you can copy the css file to your desire and link it yourself (or just embed it into your
+        html).
+    </p>
+
+    <h2>Simple Icons</h2>
+    <p>
+        Add <code>&ltspan class="icon <var>NAME</var>"&gt&lt/span&gt</code> to your html in the place you want
+        to add your icon. Example:
+    </p>
+    <pre>
+&ltspan class="icon search"&gt&lt/span&gt
+    </pre>
+    <div class="card">
+        <span class="icon search"></span>
+    </div>
+
+    <h2>Icon Color</h2>
+    <p>
+        The icon will usually take the color of <code>var(--primary)</code>. You can change the content of the
+        variable or change the color directly with <code>background</code>. Example:
+    </p>
+    <pre>
+&ltspan class="icon search" style="background: red;"&gt&lt/span&gt
+&ltspan style="--primary: blue"&gt
+    &ltspan class="icon search"&gt&lt/span&gt
+&lt/span&gt
+    </pre>
+    <div class="card">
+        <span class="icon search" style="background: red;"></span>
+        <span style="--primary: blue">
+            <span class="icon search"></span>
+        </span>
+    </div>
+
+    <h2>Icon Size</h2>
+    <p>
+        Currently there are two icon sizes, the default and a bigger size. To use the bigger size set the class
+        to <code>class="big icon"</code>. Note that the width of the lines also changes. Example:
+    </p>
+    <pre>
+&ltspan class="icon search"&gt&lt/span&gt
+&ltspan class="big icon search"&gt&lt/span&gt
+    </pre>
+    <div class="card">
+        <span class="icon search"></span>
+        <span class="big icon search"></span>
+    </div>
+
+    <h2>Composite Icons</h2>
+    <p>
+        To combine icons add another icon with <code>class="sub-icon <var>POSITION</var> <var>NAME</var>"</code>.
+        The position may be one of <code>bottom-right</code>, <code>bottom-left</code>, <code>top-right</code>
+        or <code>top-left</code>. Example:
+    </p>
+    <pre>
+&ltspan class="icon search"&gt&lt/span&gt
+&ltspan class="sub-icon top-right search"&gt&lt/span&gt
+    </pre>
+    <div class="card">
+        <span class="icon search"></span>
+        <span class="sub-icon top-right plus"></span>
+    </div>
+
+    <h1>Icons</h1>
+    <div id="icons">
+            <button onclick="alert('NAME of this icon is \'search\'.')">
+                <span class="big icon search"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'home\'.')">
+                <span class="big icon home"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'right_arrow\'.')">
+                <span class="big icon right_arrow"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'x\'.')">
+                <span class="big icon x"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'left_arrow\'.')">
+                <span class="big icon left_arrow"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'tick\'.')">
+                <span class="big icon tick"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'plus\'.')">
+                <span class="big icon plus"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'down_arrow\'.')">
+                <span class="big icon down_arrow"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'trash\'.')">
+                <span class="big icon trash"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'up_arrow\'.')">
+                <span class="big icon up_arrow"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'filter\'.')">
+                <span class="big icon filter"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'minus\'.')">
+                <span class="big icon minus"></span>
+            </button>
+            <button onclick="alert('NAME of this icon is \'heart\'.')">
+                <span class="big icon heart"></span>
+            </button>
+    </div>
 </body>
+
 </html>

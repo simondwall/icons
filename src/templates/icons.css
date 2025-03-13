@@ -25,15 +25,6 @@ span.big.icon {
     min-height: 1.5rem;
 }
 
-span.icon+span.sub-icon.bottom-left {
-    transform: translate(-1.2rem, 0.6rem);
-}
-span.icon+span.sub-icon.top-right {
-    transform: translate(-0.3rem, -0.2rem);
-}
-span.icon+span.sub-icon.top-left {
-    transform: translate(-1.2rem, -0.2rem);
-}
 button:has(>span.big.icon) {
     width: 2.25rem;
     height: 2.25rem;

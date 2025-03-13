@@ -25,15 +25,6 @@ span.big.icon {
     min-height: 1.5rem;
 }
 
-span.icon+span.sub-icon.bottom-left {
-    transform: translate(-1.2rem, 0.6rem);
-}
-span.icon+span.sub-icon.top-right {
-    transform: translate(-0.3rem, -0.2rem);
-}
-span.icon+span.sub-icon.top-left {
-    transform: translate(-1.2rem, -0.2rem);
-}
 button:has(>span.big.icon) {
     width: 2.25rem;
     height: 2.25rem;
@@ -80,6 +71,10 @@ span.icon.search, span.sub-icon.search {
     mask-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2010%2010%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A2%3Bstroke%3A%23ffffff%3B%22%3E%3Cpath%20d%3D%22M4.086%2C1.965C4.745%2C1.965%205.334%2C2.266%205.723%2C2.737C6.026%2C3.104%206.208%2C3.574%206.208%2C4.086C6.208%2C4.672%205.97%2C5.202%205.586%2C5.586C5.202%2C5.97%204.672%2C6.208%204.086%2C6.208C3.501%2C6.208%202.971%2C5.97%202.587%2C5.586C2.203%2C5.202%201.965%2C4.672%201.965%2C4.086C1.965%2C3.492%202.21%2C2.954%202.605%2C2.569C2.987%2C2.195%203.51%2C1.965%204.086%2C1.965Z%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3Cpath%20d%3D%22M8.035%2C8.035L5.586%2C5.586%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3C/svg%3E');
 }
 
+span.icon.home, span.sub-icon.home {
+    mask-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2010%2010%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A3%3Bstroke%3A%23ffffff%3B%22%3E%3Cpath%20d%3D%22M2.658%2C3.271L2.658%2C7.622L7.342%2C7.622L7.342%2C3.271%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3Cpath%20d%3D%22M1.876%2C3.271L5%2C1.855L8.124%2C3.271%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3C/svg%3E');
+}
+
 span.icon.right_arrow, span.sub-icon.right_arrow {
     mask-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2010%2010%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A1.5%3Bstroke%3A%23ffffff%3B%22%3E%3Cpath%20d%3D%22M3.7%2C8.232L6.3%2C5L3.7%2C1.768%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3C/svg%3E');
 }
@@ -113,7 +108,7 @@ span.icon.up_arrow, span.sub-icon.up_arrow {
 }
 
 span.icon.filter, span.sub-icon.filter {
-    mask-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2010%2010%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A3%3Bstroke%3A%23ffffff%3B%22%3E%3Cpath%20d%3D%22M5%2C6.395L2.238%2C2.766L7.762%2C2.766L5%2C6.395Z%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3Cpath%20d%3D%22M5%2C6.395L5%2C7.719%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3Bstroke-miterlimit%3A2%3B%22%20/%3E%3C/svg%3E');
+    mask-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2010%2010%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A3%3Bstroke%3A%23ffffff%3B%22%3E%3Cpath%20d%3D%22M7.762%2C3.38L5%2C6.395L2.238%2C3.38L2.238%2C2.191L7.762%2C2.191L7.762%2C3.38Z%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3B%22%20/%3E%3Cpath%20d%3D%22M5%2C6.395L5%2C7.719%22%20style%3D%22fill%3Anone%3Bstroke%3A%23ffffff%3Bstroke-width%3A1px%3Bstroke-miterlimit%3A2%3B%22%20/%3E%3C/svg%3E');
 }
 
 span.icon.minus, span.sub-icon.minus {
