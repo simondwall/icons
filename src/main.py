@@ -24,10 +24,10 @@ def main():
             name = path.basename(file_path)[:-4]
             icons[name] = quote(str(Icon(file.read())))
 
-    with open(path.join(dirname, "../output/icons.css"), "w") as file:
+    with open(path.join(dirname, "../docs/icons.css"), "w") as file:
         file.write(template_env.get_template('icons.css').render(icons=icons))
 
-    with open(path.join(dirname, "../output/index.html"), "w") as file:
+    with open(path.join(dirname, "../docs/index.html"), "w") as file:
         file.write(template_env.get_template('index.html').render(icons=icons))
 
 
