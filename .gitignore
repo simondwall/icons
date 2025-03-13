@@ -1,0 +1,3 @@
+.svg_exports/*
+
+!.svg_exports/.gitkeep

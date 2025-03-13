@@ -1,0 +1,9 @@
+<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="
+    {%- for key, item in styles.items() -%}
+        {{key}}:{{item}};
+    {%- endfor -%}
+">
+    {%- for path in paths -%}
+        {{ path }}
+    {%- endfor -%}
+</svg>

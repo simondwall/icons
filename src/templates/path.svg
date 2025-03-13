@@ -1,0 +1,1 @@
+<path d="{{ path }}" style="{%- for key, item in styles.items() -%}{{key}}:{{item}};{%- endfor -%}" />
